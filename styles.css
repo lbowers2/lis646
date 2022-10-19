@@ -1,0 +1,110 @@
+/* This style sheet completed by Leah*/
+
+/* colors
+Royal Purple - #012786
+Chewed Gum - #ea9cd2
+Asparagus - #40721d
+Inch Worm - #d1fe26
+Butter - #FFED65
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* nav bar--------------------------------------------------*/
+
+.nav{
+	overflow: hidden;
+	font-family:'Roboto Slab';
+	background:#012786;
+}
+
+.nav a {
+	float: left;
+	color: #ea9cd2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.nav a:hover {
+	background-color:#d1fe26;
+	color:#40721d;
+}
+
+/* blog nav bar-----------------------------------------------*/
+
+.blognav {
+	overflow: hidden;
+	font-family:'Roboto Slab';
+	background:#40721d;
+}
+
+.blognav a {
+	float: left;
+	color: #d1fe26;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.blognav a:hover {
+	background-color:#ea9cd2;
+	color:#012786;
+}
+
+.blognav a.active {
+	background-color:#ea9cd2;
+	color:#012786;
+}
+
+/* content styling--------------------------------------------*/
+
+
+#contentWrapper{
+	padding:50px;
+}
+
+h1 {
+	font-family:'Alfa Slab One', cursive;
+	font-size:54px;
+}
+
+h2 {
+	font-family:'Roboto Slab', serif;
+	font-size:28px;
+}
+
+
+
+/* row and column styling for blog layout---------------------------------*/
+
+.column {
+	float: left;
+}
+
+.narrow {
+	width: 25%;
+}
+
+.wide {
+	width: 75%;
+	box-sizing: border-box; 
+	height: auto;
+	padding:50px;
+	border: solid;
+	border-width: thin;
+	border-color: #40721d;
+	border-radius: 1em;
+}
+
+/* clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
