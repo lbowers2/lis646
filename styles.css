@@ -1,28 +1,32 @@
 /* This style sheet completed by Leah*/
 
 /* colors
-Royal Purple - #012786
-Chewed Gum - #ea9cd2
+Eggplant - #4b1f42
+Chewed Gum - #ED65B3
 Asparagus - #40721d
 Inch Worm - #d1fe26
 Butter - #FFED65
+Midnight - #01116c
+Electric Blue - #1F8FFB
 */
 
 * {
   box-sizing: border-box;
 }
 
-/* nav bar--------------------------------------------------*/
+/* index nav bar--------------------------------------------------*/
 
 .nav{
-	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width:100%;
 	font-family:'Roboto Slab';
-	background:#012786;
+	background:#01116c;
 }
 
 .nav a {
 	float: left;
-	color: #ea9cd2;
+	color: #1F8FFB;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -30,42 +34,16 @@ Butter - #FFED65
 }
 
 .nav a:hover {
-	background-color:#d1fe26;
-	color:#40721d;
+	background-color:#1F8FFB;
+	color:#01116c;
 }
 
-/* blog nav bar-----------------------------------------------*/
-
-.blognav {
-	overflow: hidden;
-	font-family:'Roboto Slab';
-	background:#40721d;
-}
-
-.blognav a {
-	float: left;
-	color: #d1fe26;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-}
-
-.blognav a:hover {
-	background-color:#ea9cd2;
-	color:#012786;
-}
-
-.blognav a.active {
-	background-color:#ea9cd2;
-	color:#012786;
-}
 
 /* content styling--------------------------------------------*/
 
 
 #contentWrapper{
-	padding:50px;
+	margin:50px;
 }
 
 h1 {
@@ -79,32 +57,31 @@ h2 {
 }
 
 
-
-/* row and column styling for blog layout---------------------------------*/
+/* column styling for layout---------------------------------*/
 
 .column {
 	float: left;
+	padding: 10px;
 }
 
 .narrow {
-	width: 25%;
+	width: 15%;
 }
 
 .wide {
-	width: 75%;
-	box-sizing: border-box; 
-	height: auto;
-	padding:50px;
-	border: solid;
-	border-width: thin;
-	border-color: #40721d;
-	border-radius: 1em;
+	width: 85%;
 }
 
-/* clear floats after the columns */
+.profile {
+	position:relative;
+	top:40px;
+	left:75px;
+}
+
+/* clear floats after the columns ---------------------------*/
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
