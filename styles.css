@@ -57,31 +57,38 @@ h2 {
 }
 
 
-/* column styling for layout---------------------------------*/
-
-.column {
-	float: left;
-	padding: 10px;
+/* flex styling for main page layout----------------------------*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.narrow {
-	width: 15%;
+.item {
+  width: 48%;
+  height: 100%;
+  margin-bottom: 2%;
 }
 
-.wide {
-	width: 85%;
+.item:nth-child(3n) {
+  width: 100%;
 }
 
-.profile {
-	position:relative;
-	top:40px;
-	left:75px;
+
+/* grid styling for blog layout---------------------------------*/
+
+.grid-container {
+	display: grid;
+	column-gap: 15px;
+	row-gap: 50px;
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
-/* clear floats after the columns ---------------------------*/
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
+.item2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
+
